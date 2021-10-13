@@ -1,0 +1,25 @@
+.container {
+  background-color: rgb(65, 16, 202);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+}
+.links p {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.linkss {
+  color: white;
+  text-decoration: none;
+}
+.active {
+  border-bottom: 1px solid darkcyan;
+}
