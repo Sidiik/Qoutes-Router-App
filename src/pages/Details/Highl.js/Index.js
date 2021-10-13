@@ -1,9 +1,11 @@
 import React from "react";
+import styles from "./high.module.css";
 
-const Highligtht = () => {
+const Highligtht = ({ qoute }) => {
+  console.log(qoute);
   return (
-    <div>
-      <h1>Highlightening Qoutes</h1>
+    <div className={styles.container}>
+      <h1>{qoute.text}</h1>
     </div>
   );
 };

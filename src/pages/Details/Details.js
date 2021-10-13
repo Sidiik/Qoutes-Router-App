@@ -4,10 +4,15 @@ import Highligtht from "./Highl.js/Index";
 
 const Details = () => {
   const params = useParams();
-  console.log(params);
+  const Dummy_Data = [
+    { id: "Q1", text: "Have the bird and flee it" },
+    { id: "Q2", text: "Every dog has a day" },
+  ];
+  const qoute = Dummy_Data.find((qoute) => qoute.id === params.qouteID);
+  console.log(qoute, "IN HERE");
   return (
     <div>
-      <Highligtht />
+      <Highligtht qoute={qoute} />
     </div>
   );
 };
